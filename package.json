@@ -1,0 +1,39 @@
+{
+  "name": "the-finite-canvas-living",
+  "private": false,
+  "version": "2.0.0",
+  "description": "Full-stack Living Time Journal & Actuarial Sanctuary powered by Gemini 3.8 Flash (@google/genai), Express, React, TypeScript, and Tailwind CSS.",
+  "type": "module",
+  "scripts": {
+    "dev": "concurrently -n SERVER,CLIENT -c amber,teal \"tsx watch server/index.ts\" \"vite\"",
+    "dev:client": "vite",
+    "dev:server": "tsx watch server/index.ts",
+    "build": "tsc -b && vite build",
+    "start": "tsx server/index.ts",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@google/genai": "^2.30.0",
+    "cors": "^2.8.5",
+    "express": "^4.21.2",
+    "lucide-react": "^0.468.0",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "recharts": "^2.15.0"
+  },
+  "devDependencies": {
+    "@types/cors": "^2.8.17",
+    "@types/express": "^5.0.0",
+    "@types/node": "^22.10.2",
+    "@types/react": "^18.3.18",
+    "@types/react-dom": "^18.3.5",
+    "@vitejs/plugin-react": "^4.3.4",
+    "autoprefixer": "^10.4.20",
+    "concurrently": "^9.1.0",
+    "postcss": "^8.4.49",
+    "tailwindcss": "^3.4.17",
+    "tsx": "^4.19.2",
+    "typescript": "~5.6.2",
+    "vite": "^6.0.5"
+  }
+}
